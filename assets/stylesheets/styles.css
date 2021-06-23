@@ -45,7 +45,7 @@ body h1 {
   font-size: 2rem;
 }
 
-.container {
+.container-upper {
   max-width: 1440px;
 }
 
@@ -64,8 +64,9 @@ body h1 {
 }
 
 .hero img {
-  width: 168px;
-  padding: 1.5rem 0 1rem 0;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem 0 1rem 0;
 }
 
 .top-link-container {
@@ -152,6 +153,7 @@ body h1 {
 
 .container-lower {
   background: #f3fbff;
+  max-width: 1440px;
   margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,23 +200,9 @@ body h1 {
 }
 
 .skills-icon {
+  max-width: 100%;
+  height: auto;
   padding: 1rem 0 0 0;
-}
-
-.research-icon {
-  height: 65px;
-}
-
-.data-analysis-icon {
-  height: 60px;
-}
-
-.communication-icon {
-  height: 60px;
-}
-
-.project-management-icon {
-  height: 57px;
 }
 
 @media screen and (min-width: 768px) {
@@ -257,9 +245,40 @@ body h1 {
   .top-links {
     max-width: unset;
     width: 1128px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .search-degree {
     max-width: 1128px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 3rem 0;
+  }
+  .search-degree h3 {
+    margin-top: 0.5rem;
+  }
+  .search-degree p {
+    text-align: left;
+  }
+  .desktop-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 928px;
+  }
+  .search-button {
+    margin-right: 7rem;
+  }
+  .select-level,
+  .search-button {
+    margin-bottom: 0;
   }
   .skills-tile {
     width: 456px;

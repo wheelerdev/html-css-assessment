@@ -36,13 +36,8 @@ body {
   }
 }
 
-.container {
-  max-width: 1440px;
-}
-
 .container-upper {
-  //   display: flex;
-  //   justify-content: center;
+  max-width: 1440px;
   p {
     text-align: center;
     padding-bottom: 1rem;
@@ -54,8 +49,9 @@ body {
   justify-content: center;
 
   img {
-    width: 168px;
-    padding: 1.5rem 0 1rem 0;
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem 0 1rem 0;
   }
 }
 
@@ -138,6 +134,7 @@ body {
 
 .container-lower {
   background: #f3fbff;
+  max-width: 1440px;
   margin-top: 1rem;
   display: flex;
   justify-content: center;
@@ -174,28 +171,9 @@ body {
 }
 
 .skills-icon {
-  //   width: 50px;
+  max-width: 100%;
+  height: auto;
   padding: 1rem 0 0 0;
-}
-
-.research-icon {
-  //   width: 46px;
-  height: 65px;
-}
-
-.data-analysis-icon {
-  //   width: 46px;
-  height: 60px;
-}
-
-.communication-icon {
-  //   width: 54px;
-  height: 60px;
-}
-
-.project-management-icon {
-  //   width: 49px;
-  height: 57px;
 }
 
 @media screen and (min-width: 768px) {
@@ -239,10 +217,37 @@ body {
   .top-links {
     max-width: unset;
     width: 1128px;
+    justify-content: space-between;
   }
 
   .search-degree {
     max-width: 1128px;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0;
+
+    h3 {
+      margin-top: 0.5rem;
+    }
+
+    p {
+      text-align: left;
+    }
+  }
+
+  .desktop-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 928px;
+  }
+
+  .search-button {
+    margin-right: 7rem;
+  }
+
+  .select-level,
+  .search-button {
+    margin-bottom: 0;
   }
 
   .skills-tile {
